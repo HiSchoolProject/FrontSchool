@@ -1,4 +1,5 @@
-# HiSchool! Project FrontSchool
+HiSchool! Project FrontSchool
+===
 
 Requirements
 ---
@@ -19,6 +20,17 @@ sudo apt install nodejs yarn
 Setup
 ---
 
-- Clone this repository and move to the project directory
-- Install the required dependencies: `yarn`
-- Run the server: `yarn start`
+* Clone this repository and move to the project directory
+* Install the required dependencies: `yarn`
+* Run the server: `yarn start`
+
+Create a production build
+---
+
+To create a production build (ie. that you can serve with your own web server) of this application, fill in the
+`homepage` key in `package.json` with its address, for example:
+```
+"homepage": "https://myname.mydomain.com/myapp"
+```
+
+Then, just run `yarn build`.
