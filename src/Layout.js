@@ -8,6 +8,7 @@ import Translate from 'react-translate-component';
 import setEnglishContent from './Content/en';
 //import setFrenchContent from './Content/fr';
 import Home from './Home';
+import Accounts from './Accounts';
 
 // This component allows the visitor to switch language
 class LocaleSwitcher extends Component {
@@ -52,7 +53,7 @@ class Layout extends Component {
             </div>
 
             <Route exact path="/" component={Home} />
-            <Route exact path="/accounts" component={Home} />
+            <Route exact path="/accounts" component={Accounts} />
           </main>
 
         </div>
